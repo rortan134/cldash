@@ -1,0 +1,44 @@
+{
+  "name": "clipboards",
+  "version": "0.1.0",
+  "description": "Cliboard utility for React",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx",
+    "dev": "tsup src/index.tsx --watch",
+    "dev:test": "turbo run dev --filter=test...",
+    "format": "prettier --write .",
+    "test": "playwright test"
+  },
+  "keywords": [
+    "react",
+    "clipboard",
+    "copy to clipboard",
+    "hook"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rortan134/clipboards/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rortan134/clipboards.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rortan134/clipboards/issues"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "prettier": "^2.5.1",
+    "tsup": "^6.4.0",
+    "turbo": "1.6"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "packageManager": "pnpm@6.32.11"
+}
