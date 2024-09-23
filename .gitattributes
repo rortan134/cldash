@@ -1,0 +1,3 @@
+*.lockb binary diff=lockb
+# Enforce Unix newlines
+* text=auto eol=lf
